@@ -1,0 +1,20 @@
+.faq {
+    &__button {
+        margin-top: rem(80px);
+    }
+
+    &__main-title {
+        margin-top: rem(20px);
+        margin-bottom: rem(15px);
+    }
+
+    &__title {
+        margin-bottom: rem(24px);
+    }
+
+    &__section {
+        & + & {
+            margin-top: rem(40px);
+        }
+    }
+}

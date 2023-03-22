@@ -1,0 +1,83 @@
+.rewiew {
+    padding: rem(30px);
+
+    background-color: $white;
+    box-shadow: $box-shadow-rewiew;
+
+    &--slide {
+        display: flex;
+        flex-direction: column;
+
+        width: rem(288px);
+
+        border-radius: rem(24px);
+
+        @media #{$screen-tablet} {
+            width: rem(580px);
+        }
+    }
+
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: rem(20px);
+    }
+
+    &__upper-wrapper {
+        display: flex;
+        align-items: center;
+        
+        gap: rem(20px);
+    }
+    
+    &__smile-icon {
+        width: rem(64px);
+        height: rem(64px);
+
+        border-radius: rem(100px);
+    }
+
+    &__name {
+        font-size: rem($font-size-title-small);
+        line-height: rem(34px);
+        font-weight: $font-weight-title;
+
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    &__data {
+        line-height: rem(21px);
+        font-weight: $font-weight-title;
+
+        color: rgba(1, 28, 40, 0.35);
+    }
+
+    &__text {
+        line-height: rem(22px);
+        font-weight: $font-weight-title;
+
+        margin-bottom: rem(20px);
+
+        color: #69676D;
+
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
+
+    &__logo-icon {
+        display: flex;
+        align-self: flex-end;
+
+        width: rem(89px);
+        height: rem(24px);
+    }
+}

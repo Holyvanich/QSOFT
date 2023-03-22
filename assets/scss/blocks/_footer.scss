@@ -1,0 +1,48 @@
+.footer {
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+    
+    background-color: $white;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: rem(40px);
+
+        @media #{$screen-tablet} {
+            height: 100%;
+            flex-direction: row;
+        }
+    }
+
+    &__col {
+        &--links {
+            width: 100%;
+        }
+
+        &--social { 
+            @media #{$screen-tablet} {
+                padding-right: rem(40px);
+            }
+
+            @media #{$screen-desktop} {
+                border-right: rem(1px) solid $athens-gray;
+            }
+        }
+    }
+
+    &__logo {
+        height: rem(18px);
+        width: rem(93.5px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(-6px);
+        }
+    }
+    
+    @media #{$screen-tablet} {
+        height: rem($height-footer-tablet);
+    }
+}

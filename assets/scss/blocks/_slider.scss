@@ -1,0 +1,145 @@
+.slider {
+    &__list {
+        display: flex;
+        gap: rem(32px);
+
+        overflow: hidden;
+    }
+    
+    &__box {
+        position: relative;
+    }
+
+    .swiper {
+        &-slide {
+            width: auto;
+            opacity: .5;
+
+            &-active {
+                opacity: 1;
+            }
+        }
+
+        &-wrapper {
+            margin-top: rem(131px);
+            margin-bottom: rem(100px);
+        }
+
+        &--container {
+            box-shadow: $box-shadow-rewiew;
+
+            @media #{$screen-tablet} {
+                box-shadow: none;
+            }
+        }
+
+        &-button {
+            &-next,
+            &-prev {
+                &::after {
+                    content: '';
+                }
+            }
+        }
+    }
+    
+    &--news {
+        .swiper {
+            &-slide {
+                opacity: 1;
+            }
+
+            &-pagination {
+                position: static;
+
+                margin-top: rem(21px);
+
+                &-bullet {
+                    background: $athens-gray;
+                    opacity: 1;
+
+                    &-active {
+                        background: $tapestry;
+                    }
+                }
+            }
+        }
+
+        .swiper-wrapper {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+
+        top: 50%;
+        right: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        height: 0;
+        max-width: rem($width-container + 2 * $gap-standart);
+        margin: 0 auto 0;
+        padding-right: rem($gap-standart);
+        padding-left: rem($gap-standart);
+
+        @media #{$screen-tablet} {
+            display: block;
+        }
+
+        &-item {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__button {
+        align-items: center;
+        justify-content: center;
+
+        width: rem(36px);
+        height: rem(36px);
+
+        border-color: $white;
+        border-radius: rem(50px);
+        background-color: $white;
+        box-shadow: $box-shadow-rewiew;
+
+        @media #{$screen-desktop} {
+            width: rem(49px);
+            height: rem(49px);
+        }
+
+        &:hover,
+        &:focus {
+            border-color: #DC971F;
+            background-color: #DC971F;
+        }
+
+        &--next & {
+            &-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-icon {
+            width: rem(26px);
+            height: rem(26px);
+
+            color: rgba(#0a2b37, .8);
+
+            @media #{$screen-desktop} {
+                width: rem(36px);
+                height: rem(36px);
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

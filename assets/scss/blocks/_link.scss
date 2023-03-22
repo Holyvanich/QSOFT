@@ -1,0 +1,11 @@
+.link {
+    font-size: rem($font-size-huge);
+
+    &:hover {
+        text-decoration-line: underline;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}

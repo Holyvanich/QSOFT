@@ -1,0 +1,24 @@
+.textarea {
+    width: 100%;
+    height: rem(100px);
+    
+    padding-top: rem(17px);
+    padding-left: rem(20px);
+
+    border: none;
+    border: 1px solid #ebebf1;
+    outline: none;
+    border-radius: 5px;
+
+    &:disabled {
+        background-color: $athens-gray;
+    }
+    
+    &:focus {
+        border-color: $gray-color;
+    }
+
+    &::placeholder {
+        color: $light-gray-color;
+    }
+}

@@ -1,0 +1,66 @@
+.button {
+    font-size: rem($font-size-huge);
+
+    display: flex;
+
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    color: $button-color;
+    
+    &__search {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+        padding: 0;
+    }
+
+    &:hover {
+        color: $wild-bluey-onder;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    &:disabled {
+        color: $light-gray-color;
+        cursor: auto;
+
+        &:hover {
+            color: $light-gray-color;
+        }
+    }
+
+    &--fill {
+        font-size: rem($font-size-text-tiny);
+
+        padding: 16px 30px;
+        
+        background-color: $button-color;
+        border-radius: 5px;
+
+        color: $white;
+
+        &:disabled {
+            background-color: $athens-gray;
+            color: $light-gray-color;
+            cursor: auto;
+
+            &:hover {
+                background-color: $athens-gray;
+                color: $light-gray-color;
+            }
+        }
+
+        &:hover {
+            background-color: $wild-bluey-onder;
+            color: $white;
+        }
+        
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

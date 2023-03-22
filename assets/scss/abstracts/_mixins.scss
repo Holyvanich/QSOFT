@@ -1,0 +1,50 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+@mixin title-big {
+    font-size: rem($font-size-title-big);
+    line-height: rem($line-height-title-big);
+    font-weight: $font-weight-title;
+}
+
+@mixin title-medium {
+    font-size: rem($font-size-title-medium);
+    line-height: rem($line-height-title-medium);
+    font-weight: $font-weight-title;
+}
+
+@mixin title-small {
+    font-size: rem($font-size-title-small);
+    line-height: rem($line-height-title-small);
+    font-weight: $font-weight-title;
+}
+
+@mixin text-regular {
+    font-size: rem($font-size-text-regular);
+    line-height: rem($line-height-text-regular);
+    font-weight: $font-weight-text;
+}
+
+@mixin text-tiny {
+    font-size: rem($font-size-text-tiny);
+    line-height: rem(21px);
+    font-weight: $font-weight-text;
+}
+
+@mixin title-card {
+    font-size: rem($font-size-text-regular);
+    line-height: rem($line-height-text-tiny);
+    font-weight: $font-weight-title;
+}
+

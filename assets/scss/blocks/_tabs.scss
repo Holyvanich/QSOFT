@@ -1,0 +1,85 @@
+.tabs {
+    transition: $transition-duration $transition-function;
+
+    &__body {
+        margin-top: rem(50px);
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        font-size: rem($font-size-text-regular);
+        font-weight: $font-weight-title;
+        line-height: rem(20.8px);
+
+        position: relative;
+
+        cursor: pointer;
+        
+        color: $light-gray-color;
+
+        &--active {
+            color: $black-blue;
+
+            &::after {
+                position: absolute;
+
+                display: block;
+                width: 100%;
+                margin-top: rem(11px);
+
+                content: "";
+
+                background-color: transparent;
+                border-top: rem(4px) solid $cerise-red;
+                border-radius: rem(4px) rem(4px) 0 0;
+            }
+        }
+
+        & + & {
+            margin-left: rem(50px);
+        }
+    }
+
+    &__line {
+        height: rem(1px);
+        margin-top: rem(13px);
+
+        background-color: $light-gray-color;
+    }
+
+    &__block {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &--blue & {
+        &__item {
+            font-size: rem($font-size-huge);
+            line-height: rem(24px);
+
+            padding: rem(10px) rem(20px);
+            margin-right: rem(12px);
+            margin-left: 0;
+
+            color: $select-color;
+            border-radius: rem(4px);
+            background-color: $athens-gray;
+
+            &--active {
+                color: $white;
+                background-color: $select-color;
+            }
+
+            &::after {
+                display: none;
+            }
+        }  
+    }
+}

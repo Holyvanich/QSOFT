@@ -1,0 +1,97 @@
+.input {
+    font-size: rem($font-size-text-tiny);
+
+    width: 100%;
+    padding: rem(17px) rem(20px);
+
+    border: none;
+    outline: none;
+
+    border-radius: 5px;
+    border: 1px solid #ebebf1;
+
+    &:disabled {
+        background-color: $athens-gray;
+    }
+    
+    &:focus {
+        border-color: $gray-color;
+    }
+
+    &::placeholder {
+        color: $light-gray-color;
+    }
+
+    &--wrong {
+        border-color: $wrong-color;
+    }
+
+    &--wrong + .select2 .select2-selection {
+        border-color: $wrong-color !important;
+    }
+
+    &--valid {
+        border-color: $green;
+    }
+
+    &--valid + .select2 .select2-selection {
+        border-color: $wrong-color !important;
+    }
+    
+    &__text {
+        font-size: $font-size-input;
+
+        color: $asphalt;
+    }
+
+    &__message-wrong {
+        font-size: rem(10px);
+        line-height: rem(16px);
+
+        color: $wrong-color;
+    }
+
+    &__req {
+        color: $warning-color;
+    }
+
+    &__search {
+        position: relative;
+        top: 1px;
+
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__search-div {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-direction: row;
+        align-items: center;
+
+        padding: rem(10px) 0;
+        padding-right: rem($gap-standart);
+        padding-left: rem($gap-standart);
+
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid $light-gray-color;
+
+        @media #{$screen-tablet} {
+            padding: rem(8px);
+            padding-left: rem(10px);
+
+            border: rem(1px) solid $athens-gray;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.social {
+    display: flex;
+    gap: rem(23px);
+
+    @media #{$screen-tablet} {
+        padding: 0;
+    }
+
+    &__icon {
+        display: flex;
+        width: rem(40px);
+        height: rem(40px);
+        gap: rem(23px);
+    }
+}

@@ -1,0 +1,36 @@
+.base {
+    &__title {
+        max-width: rem(621px);
+        margin-top: rem(31px);
+        margin-bottom: rem(44px);
+
+        &__qsoft {
+            margin-bottom: rem(20px);
+        }
+
+        &__second-title {
+            margin-bottom: rem(10px);
+        }
+        
+        &__paragraph {
+            font-size: rem($font-size-text-tiny);
+            line-height: rem($line-height-text-tiny);
+        }
+    }
+
+    &__button-block {
+        display: flex;
+        justify-content: center;
+
+        margin-top: rem(31px);
+    }
+
+    &__icon--arrow {
+        width: rem(20px); 
+        height: rem(17px);
+        margin-left: rem(8px);
+         
+        transform: rotate(180deg);
+        color: $white;
+    }
+}

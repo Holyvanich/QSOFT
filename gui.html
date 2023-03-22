@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>GUI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body class="page">
+    <header class="page__header header">
+        <div class="container container__header">
+            <div class="header__row">
+                <div class="header__col header__col--logo">
+                    <a href="#" class="header__logo">
+                        <svg class="icon icon--arrow header__logo--icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+
+                    <div class="header__profile">
+                        <a href="#" class="header__profile--icon">
+                            <svg class="icon icon--arrow header__mobile-icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-profile-blue"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__col header__col--search">
+                    <div class="input__search-div">
+                        <button class="button button__search" title="Поиск">
+                            <svg class="icon header__search-icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        <input class="input input__search" id="search" placeholder="Найти...">
+                    </div>
+                </div>
+
+                <div class="header__col header__col--profile">
+                    <div class="header__profile--desktop">
+                        <a href="#" class="profile">
+                            <span class="profile__name">Константин</span>
+                            <div class="profile__pic">
+                                <img class="profile__avatar" src="public/images/kostya.png">
+                            </div>
+                            <div class="profile__pic--plug">
+                                <img class="profile__profile-plug" src="public/images/userpic.png">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__content content">
+        <div class="container">
+            <h1>Заголовок первого уровня</h1>
+            <h2>Заголовок второго уровня</h2>
+            <h3>Заголовок третьего уровня</h3>
+
+            <h2>Параграф</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis culpa id, 
+                possimus accusantium placeat tempora inventore aliquid maxime illo, 
+                provident eos. Eligendi excepturi expedita facere inventore, quas id iusto quasi!
+            </p>
+
+            <h2>Нумерованный список</h2>
+            <ol>
+                <li>lorem</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora recusandae voluptatem soluta ad, incidunt cupiditate necessitatibus? 
+                    Eos, blanditiis voluptates perferendis consequuntur eligendi fuga consequatur cupiditate, aperiam expedita ut voluptas?
+                </li>
+                <li>Lorem
+                    <ol>
+                        <li>lorem</li>
+                        <li>ipsum</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <h2>Ненумерованный список</h2>
+            <ul>
+                <li>lorem</li>
+                <li>ipsum</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora recusandae voluptatem soluta ad, incidunt cupiditate necessitatibus? 
+                    Eos, blanditiis voluptates perferendis consequuntur eligendi fuga consequatur cupiditate, aperiam expedita ut voluptas?
+                </li>
+            </ul>
+
+            <h2>Вложенные списки</h2>
+            <ol>
+                <li>lorem
+                    <ul>
+                        <li>ipsum
+                            <ol>
+                                <li>lorem</li>
+                                <li>ipsum</li>
+                            </ol>
+                        </li>
+                        <li>lorem</li>
+                    </ul>
+                </li>
+                <li>ipsum</li>
+            </ol>
+
+            <h2>Цитата</h2>
+            
+            <div style="padding: 20px; padding-right: 30px; background-color: #ffffff;">
+                <blockquote>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vitae perferendis facere! Maxime error magnam, 
+                    ad veniam voluptatem voluptas quia blanditiis fugit dolorum obcaecati reiciendis qui nostrum cupiditate est! Consequuntur.
+                </blockquote>
+            </div>
+
+            <h2>Ссылка</h2>
+            <a class="link">Выбрать</a>
+
+            <h2>Изображение</h2>
+            <img style="width: 300px" src="http://www.elementsofstyleblog.com/wp-content/uploads/2010/02/600x400-princeville-sunset.jpg">
+
+            <h2>Кнопка с заливкой</h2>
+            <button class="button button--fill">Нажми меня</button>
+            <h2>Кнопка с заливкой выключенная</h2>
+            <button class="button button--fill" disabled>Нажми меня</button>
+
+            <h2>Кнопка без заливки</h2>
+            <button class="button">Нажми меня</button>
+            <h2>Кнопка без заливки выключенная</h2>
+            <button class="button" disabled>Нажми меня</button>
+            
+            <h2>Меню</h2>
+            <div class="menu">
+                <button class="menu__option">Обычный пункт</button>
+                <button class="menu__option">Обычный пункт</button>
+                <button class="menu__option">Обычный пункт</button>
+            </div>
+
+            <h2>Инпуты</h2>
+            <form style="display: flex; flex-direction: column; align-items: flex-start; width: 350px; gap: 20px;">
+                <div class="input__wrapper">
+                    <span class="input__text">Обязательный инпут</span>
+                    <input class="input" placeholder="Введите обязательно...">
+                </div>
+
+                <div class="input__wrapper">
+                    <span class="input__text">Ошибка ввода</span>
+                    <input class="input input--wrong" placeholder="Телефон">
+                    <span class="input__text input__text--wrong">Телефон указан неверно</span>
+                </div>
+
+                <div class="input__wrapper">
+                    <span class="input__text input__text_disabld">Неактивный инпут</span>   
+                    <input class="input" disabled placeholder="Неактивно">
+                </div>
+            </form>
+
+            <h2>Чекбоксы</h2>
+            <form style="display: flex; gap: 10px; flex-direction: column; align-items: flex-start;">
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox1" disabled checked>
+                    <label for="checkbox1" class="checkbox__wrapper">
+                        <svg class="icon checkbox__svg">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-check"></use>
+                        </svg>
+                        Выключенный, выбранный
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox2" disabled>
+                    <label for="checkbox2" class="checkbox__wrapper">
+                        <svg class="icon checkbox__svg">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-check"></use>
+                        </svg>
+                        Выключенный, невыбранный
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox3" checked>
+                    <label for="checkbox3" class="checkbox__wrapper">
+                        <svg class="icon checkbox__svg">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-check"></use>
+                        </svg>
+                        Обычный
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox4">
+                    <label for="checkbox4" class="checkbox__wrapper">
+                        <svg class="icon checkbox__svg">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-check"></use>
+                        </svg>
+                        Еще один обычный
+                    </label>
+                </div>
+            </form>
+
+            <h2>Радио</h2>
+            <form style="display: flex; gap: 10px; flex-direction: column; align-items: flex-start;">
+                <div>
+                    <input type="radio" class="radio" disabled name="test1" id="radio1" checked>
+                    <label for="radio1" class="radio__wrapper">
+                        <div class="radio__dot"></div>
+                        Выключенный, выбранный
+                    </label>
+                </div>
+                
+                <div>
+                    <input type="radio" class="radio" disabled name="test1" id="radio2">
+                    <label for="radio2" class="radio__wrapper">
+                        <div class="radio__dot"></div>
+                        Выключенный, невыбранный
+                    </label>
+                </div>
+                
+                <div>
+                    <input type="radio" class="radio" name="test" id="radio3" checked>
+                    <label for="radio3" class="radio__wrapper">
+                        <div class="radio__dot"></div>
+                        Обычный
+                    </label>
+                </div>
+                
+                <div>
+                    <input type="radio" class="radio" name="test" id="radio4">
+                    <label for="radio4" class="radio__wrapper">
+                        <div class="radio__dot"></div>
+                        Еще один обычный
+                    </label>
+                </div>
+            </form>
+
+            <h2>Карточки</h2>
+            <div class="cards">
+                <ul class="cards__list">
+                    <li class="cards__item">
+                        <article class="card">
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--regular">
+                                <span class="card__title">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, 
+                                    что он у себя в постели превратился в страшное насекомое. Лежа на панцирно текст текст текст текст текст текст текст текст текст текст текст
+                                </p>
+                                <div class="card__gadgets card__gadgets--regular">
+                                    <span class="card__data">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item">
+                        <article class="card">
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/chair.jpg" class="card__image-pic">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--regular">
+                                <span class="card__title">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, 
+                                    что он у себя в постели превратился в страшное насекомое. Лежа на панцирно текст текст текст текст текст текст текст текст текст текст текст
+                                </p>
+                                <div class="card__gadgets card__gadgets--regular">
+                                    <span class="card__data">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item">
+                        <article class="card">
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--regular">
+                                <span class="card__title">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, 
+                                </p>
+                                <div class="card__gadgets card__gadgets--regular">
+                                    <span class="card__data">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item cards__item--big">
+                        <article class="card card--big">
+                            <div class="card__image card__image--big">
+                                <div class="card__box">
+                                    <img src="/public/images/chair.jpg" class="card__image-pic card__image-pic--big">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--big">
+                                <span class="card__title card__title--big">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text card__text--big">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, 
+                                    что он у себя в постели превратился в страшное насекомое. Лежа на панцирно текст текст текст текст текст текст текст текст текст текст текст
+                                </p>
+                                <div class="card__gadgets">
+                                    <span class="card__data card__data--big">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like stats__icon--big">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num stats__num--big">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment stats__icon--big">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num stats__num--big">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view stats__icon--big">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num stats__num--big">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item">
+                        <article class="card">
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--regular">
+                                <span class="card__title">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, 
+                                    что он у себя в постели превратился в страшное насекомое. Лежа на панцирно текст текст текст текст текст текст текст текст текст текст текст
+                                </p>
+                                <div class="card__gadgets card__gadgets--regular">
+                                    <span class="card__data">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item">
+                        <article class="card">
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--regular">
+                                <span class="card__title">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил.
+                                </p>
+                                <div class="card__gadgets card__gadgets--regular">
+                                    <span class="card__data">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item">
+                        <article class="card">
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                    <button class="card__button" data-tooltip="Добавить в избранное">
+                                        <svg class="icon card__star card__star-normal">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-active">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                        </svg>
+                                        <svg class="icon card__star card__star-hover">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card__info card__info--regular">
+                                <span class="card__title">В заголовке не должно быть больше двух строк. Если больше, текст обрезается. Да-да обрезается</span>
+                                <p class="card__text">
+                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, 
+                                    что он у себя в постели превратился в страшное насекомое. Лежа на панцирно текст текст текст текст текст текст текст текст текст текст текст
+                                </p>
+                                <div class="card__gadgets card__gadgets--regular">
+                                    <span class="card__data">04.02.2020</span>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--comment">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-comment"></use>
+                                            </svg>
+                                            <div class="stats__num">76</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                <h2>Карточки широкие</h2>
+                <ul class="cards__list cards--wide">
+                    <li class="cards__item">
+                        <article class="card card--wide">
+                            <a href="#" class="card__link"></a>
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <button class="card__button" data-tooltip="Добавить в избранное">
+                                    <svg class="icon card__star card__star-normal">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="icon card__star card__star-active">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                    </svg>
+                                    <svg class="icon card__star card__star-hover">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__links">
+                                    <a href="#">Йога</a>
+                                    <div class="card__line"></div>
+                                    <a href="#">Студия Йогаджой</a>
+                                </div>
+                                <span class="card__title">Занятия хатха йогой в центре Москвы</span>
+                                <p class="card__text">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                                    Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой к...
+                                </p>
+                                <div class="card__gadgets">
+                                    <div class="card__date-and-status">
+                                        <span class="card__data">04.02.2020</span>
+                                        <div class="card__line"></div>
+                                        <span class="card__status">Предложение активно</span>
+                                    </div>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item cards--wide">
+                        <article class="card card--wide">
+                            <a href="#" class="card__link"></a>
+                            <div class="card__image card__image--wide--different">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <button class="card__button" data-tooltip="Добавить в избранное">
+                                    <svg class="icon card__star card__star-normal">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="icon card__star card__star-active">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                    </svg>
+                                    <svg class="icon card__star card__star-hover">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__links">
+                                    <a href="#">Транспорт</a>
+                                    <div class="card__line"></div>
+                                    <a href="#">Такси Арама</a>
+                                </div>
+                                <span class="card__title">
+                                    Скидки на такси от компании «Таксопарк Арама»
+                                    предлагает скидки сотрудникам компании
+                                </span>
+                                <p class="card__text">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                                </p>
+                                <div class="card__gadgets">
+                                    <div class="card__date-and-status">
+                                        <span class="card__data">04.02.2020</span>
+                                        <div class="card__line"></div>
+                                        <span class="card__status">Предложение активно</span>
+                                    </div>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="cards__item cards--wide">
+                        <article class="card card--wide">
+                            <a href="#" class="card__link"></a>
+                            <div class="card__image">
+                                <div class="card__box">
+                                    <img src="/public/images/qsoft-plug.jpg" class="card__image-pic">
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <button class="card__button" data-tooltip="Добавить в избранное">
+                                    <svg class="icon card__star card__star-normal">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="icon card__star card__star-active">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                                    </svg>
+                                    <svg class="icon card__star card__star-hover">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__links">
+                                    <a href="#">Экскурсии</a>
+                                    <div class="card__line"></div>
+                                    <a href="#">ОАО «Спутник Москвича»</a>
+                                </div>
+                                <span class="card__title">Экскурсии с большими скидками</span>
+                                <p class="card__text">
+                                    Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели.
+                                </p>
+                                <div class="card__gadgets">
+                                    <div class="card__date-and-status">
+                                        <span class="card__data">04.02.2020</span>
+                                        <div class="card__line"></div>
+                                        <span class="card__status">Предложение активно</span>
+                                    </div>
+                                    <div class="card__stats stats">
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--like">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-like"></use>
+                                            </svg>
+                                            <div class="stats__num">123</div>
+                                        </div>
+                                        <div class="stats__item">
+                                            <svg class="icon stats__icon icon--view">
+                                                <use xlink:href="public/images/icons/sprite.svg#icon-view"></use>
+                                            </svg>
+                                            <div class="stats__num">34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Хлебные крошки</h2>
+
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Статья</a>
+                    </li>
+
+                    <li class="breadcrumbs__item breadcrumbs__item--active">
+                        <a href="#" class="breadcrumbs__link">Как верстать страницу</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h2>Табы</h2>
+
+            <div class="tabs" data-tabs>
+                <nav class="tabs__items">
+                    <ul class="tabs__list">
+                        <li class="tabs__item tabs__item--active" data-tab="news">
+                            Новости
+                        </li>
+
+                        <li class="tabs__item" data-tab="recipe">
+                            Рецепты
+                        </li>
+
+                        <li class="tabs__item" data-tab="img">
+                            Фото
+                        </li>
+                    </ul>
+                    <hr class="tabs__line">
+                </nav>
+
+                <div class="tabs__body">
+                    <div class="tabs__block tabs__block--active" data-tab-section="news">
+                        Новости
+                    </div>
+                    <div class="tabs__block" data-tab-section="recipe">
+                        Рецепты
+                    </div>
+                    <div class="tabs__block" data-tab-section="img">
+                        Фото
+                    </div>
+                </div>
+            </div>
+
+            <h2>Табы синие</h2>
+
+            <div class="tabs tabs--blue" data-tabs>
+                <nav class="tabs__items">
+                    <ul class="tabs__list">
+                        <li class="tabs__item tabs__item--active" data-tab="articles">
+                            Статья
+                        </li>
+
+                        <li class="tabs__item" data-tab="videos">
+                            Видео
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="tabs__body">
+                    <div class="tabs__block tabs__block--active" data-tab-section="articles">
+                        Статьи
+                    </div>
+                    <div class="tabs__block" data-tab-section="videos">
+                        Видео
+                    </div>
+                </div>
+            </div>
+
+            <h2>Карточки слайдера</h2>
+
+            <div class="slider slider--news">
+                <div class="slider__box" data-carousel="news">
+                    <div class="swiper-container" data-carousel-container>
+                        <ul class="swiper-wrapper rewiews__list">
+                            <li class="swiper-slide rewiews__item">
+                                <article class="slider__card slider-card">
+                                    <div class="slider-card__upper">
+                                        <span class="slider-card__title">Важное уведомление</span>
+                                        <svg class="icon slider-card__icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-warning"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="slider-card__text">
+                                        Удаленная работа.
+                                        Инструкция для сотрудников
+                                        о том как защитить себя от короновируса
+                                    </p>
+                                    <button class="button button--fill slider-card__button">
+                                        Подробнее
+                                    </button>
+                                </article>
+                            </li>
+
+                            <li class="swiper-slide rewiews__item">
+                                <article class="slider__card slider-card">
+                                    <div class="slider-card__upper">
+                                        <span class="slider-card__title">Вопрос дня</span>
+                                        <svg class="icon slider-card__icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-question"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="slider-card__text">
+                                        Вы адекватный?
+                                    </p>
+                                    <div class="slider-card__buttons">
+                                        <button class="button slider-card__button slider-card__buttons__button">
+                                            Нет
+                                        </button>
+                                        <button class="button button--fill slider-card__button slider-card__buttons__button">
+                                            Да
+                                        </button>
+                                    </div>
+                                </article>  
+                            </li>   
+
+                            <li class="swiper-slide rewiews__item">
+                                <article class="slider__card slider-card">
+                                    <div class="slider-card__upper">
+                                        <span class="slider-card__title">Технические работы</span>
+                                        <svg class="icon slider-card__icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-info"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="slider-card__text">
+                                        Портал будет недоступен
+                                        14.08.2021 с 10:00 до 19:00
+                                    </p>
+                                    <button class="button button--fill slider-card__button">
+                                        Ясно-понятно
+                                    </button>
+                                </article>
+                            </li>   
+
+                            <li class="swiper-slide rewiews__item">
+                                <article class="slider__card slider-card">
+                                    <div class="slider-card__upper">
+                                        <span class="slider-card__title">Опрос недели</span>
+                                        <svg class="icon slider-card__icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-question"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="slider-card__text">
+                                        Какую книгу вы больше всего
+                                        любили, когда были маленьким?
+                                    </p>
+                                    <button class="button button--fill slider-card__button">
+                                        Пройти опрос
+                                    </button>
+                                </article>
+                            </li>  
+                        </ul>
+                        <div class="swiper-pagination slider-card__pagination" data-carousel-pagination></div>
+                    </div>
+                </div>  
+            </div>
+
+            <h2>Слайдер</h2>
+
+            <div class="rewiews">
+                <div class="rewiews__slider slider">
+                    <div class="slider__box" data-carousel="infinity">
+                        <div class="swiper-container" data-carousel-container>
+                            <ul class="swiper-wrapper rewiews__list">
+                                <li class="swiper-slide rewiews__item">
+                                    <article class="rewiew rewiew--slide"> 
+                                        <div class="rewiew__upper">
+                                            <div class="rewiew__upper-wrapper">
+                                                <svg class="rewiew__smile-icon icon">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-smile"></use>
+                                                </svg>
+                                                <span class="rewiew__name">Анна</span>
+                                            </div>
+                                            <span class="rewiew__data">05.04.2019</span>
+                                        </div>
+                                        <p class="rewiew__text">
+                                            Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, 
+                                            либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации 
+                                            Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. 
+                                            Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                        </p>
+                                        <svg class="rewiew__logo-icon icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-apteka"></use>
+                                        </svg>
+                                    </article>
+                                </li>
+                                
+                                <li class="swiper-slide rewiews__item">
+                                    <article class="rewiew rewiew--slide"> 
+                                        <div class="rewiew__upper">
+                                            <div class="rewiew__upper-wrapper">
+                                                <svg class="rewiew__smile-icon icon">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-smile"></use>
+                                                </svg>
+                                                <span class="rewiew__name">Анна</span>
+                                            </div>
+                                            <span class="rewiew__data">05.04.2019</span>
+                                        </div>
+                                        <p class="rewiew__text">
+                                            Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, 
+                                            либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации 
+                                            Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. 
+                                            Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                        </p>
+                                        <svg class="rewiew__logo-icon icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-apteka"></use>
+                                        </svg>
+                                    </article>
+                                </li>
+
+                                <li class="swiper-slide rewiews__item">
+                                    <article class="rewiew rewiew--slide"> 
+                                        <div class="rewiew__upper">
+                                            <div class="rewiew__upper-wrapper">
+                                                <svg class="rewiew__smile-icon icon">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-smile"></use>
+                                                </svg>
+                                                <span class="rewiew__name">Анна</span>
+                                            </div>
+                                            <span class="rewiew__data">05.04.2019</span>
+                                        </div>
+                                        <p class="rewiew__text">
+                                            Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, 
+                                            либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации 
+                                            Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. 
+                                            Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                        </p>
+                                        <svg class="rewiew__logo-icon icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-apteka"></use>
+                                        </svg>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="slider__buttons">
+                                <div class="swiper-button-prev slider__buttons-item" data-carousel-prev>
+                                    <button type="button" class="slider__button slider__button--prev button">
+                                        <svg class="slider__button-icon icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swiper-button-next slider__buttons-item" data-carousel-next>
+                                    <button type="button" class="slider__button slider__button--next button">
+                                        <svg class="slider__button-icon icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Селект</h2>
+
+            <div class="select" data-select>
+                <select class="select__control" name="select" id="select" data-select-control data-placeholder="Селект">
+                    <option></option>
+                    <option value="1">Крутой пункт</option>
+                    <option value="2">Бесподобный пункт</option>
+                    <option value="3">Невообразимый пункт</option>
+                    <option value="4">Лучший пункт</option>
+                    <option value="5">Потрясный пункт</option>
+                    <option value="6">Невероятный пункт</option>
+                </select>
+            </div>
+
+            <h2>Спойлер</h2>
+            <div class="spoiler">
+                <div class="spoiler__item" data-spoiler>
+                    <div class="spoiler__header" data-spoiler-toggle>
+                        <p class="spoiler__title">Обязательно ли регистрироваться на сайте, чтобы заказать продукцию?</p>
+                        <button type="button" class="spoiler__toggle button">
+                            <span class="spoiler__toggle-icon">
+                                <svg class="icon spoiler__icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-down"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="spoiler__body" data-spoiler-content>
+                        Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, 
+                        либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, 
+                        а также доступ к специальным предложениям. 
+                        Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                    </div>
+                </div>
+
+                <div class="spoiler__item" data-spoiler>
+                    <div class="spoiler__header" data-spoiler-toggle>
+                        <p class="spoiler__title">Обязательно ли регистрироваться на сайте, чтобы заказать продукцию?</p>
+                        <button type="button" class="spoiler__toggle button">
+                            <span class="spoiler__toggle-icon">
+                                <svg class="icon spoiler__icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-down"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="spoiler__body" data-spoiler-content>
+                        Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, 
+                        либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, 
+                        а также доступ к специальным предложениям. 
+                        Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                    </div>
+                </div>
+
+                <div class="spoiler__item" data-spoiler>
+                    <div class="spoiler__header" data-spoiler-toggle>
+                        <p class="spoiler__title">Обязательно ли регистрироваться на сайте, чтобы заказать продукцию?</p>
+                        <button type="button" class="spoiler__toggle button">
+                            <span class="spoiler__toggle-icon">
+                                <svg class="icon spoiler__icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-down"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="spoiler__body" data-spoiler-content>
+                        Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, 
+                        либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, 
+                        а также доступ к специальным предложениям. 
+                        Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                    </div>
+                </div>
+            </div>
+
+            <h2>Тултип</h2>
+
+            <div style="display: flex; justify-content: center;">
+                <div style="position: relative;">
+                    <button class="card__button" data-tooltip="Добавить в избранное">
+                        <svg class="icon card__star card__star-normal">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="icon card__star card__star-active">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill"></use>
+                        </svg>
+                        <svg class="icon card__star card__star-hover">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-hover"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <h2>Показать еще</h2> 
+
+            <div class="spoiler spoiler--simple">
+                <div class="spoiler__item" data-spoiler>
+                    <div class="spoiler__body" data-spoiler-content>
+                        Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. 
+                    </div>
+                    <div class="spoiler__header" data-spoiler-toggle>
+                        <p class="spoiler__title" data-spoiler-title>Показать еще</p>
+                        <button type="button" class="button">
+                            <span class="spoiler__toggle-icon">
+                                <svg class="icon spoiler__icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-down"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Модальное окно</h2>
+
+            <button type="button" class="button button--fill"
+            data-modal-type="modal"
+            data-src="#tech-support">
+                Модальное окно
+            </button>
+
+            <article id="tech-support" class="modal modal--small modal--centered" style="display: none;">
+                <div class="modal__content">
+                    <header class="modal__section modal__section--header">
+                        <p class="modal__title">
+                            Техническая поддержка
+                        </p>
+                    </header>
+
+                    <form class="modal__form" action="#" method="post" data-validation>
+                        <section class="modal__section modal__section--content">
+                            <div class="modal__wrapper">
+                                <div class="input__wrapper">
+                                    <span class="input__text">Тема<span class="input__req">*</span></span>
+                                    <input name="theme" class="input js-required">
+                                </div>
+                                <div class="input__wrapper">
+                                    <span class="input__text">Напишите вопрос</span>
+                                    <textarea name="info" class="textarea" placeholder="Причина..."></textarea>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="modal__section modal__section--actions">
+                            <button type="submit" class="button button--fill modal__button">Отправить</button>
+                        </section>
+                    </form>
+                </div>
+            </article>  
+
+        </div>
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col footer__col--social">
+                    <div class="footer__social social">
+                        <div class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="icon social__icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="icon social__icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--links">
+                    <div class="footer__links links">
+                        <div class="links__item">
+                            <a href="#">Правила</a>
+                        </div>
+                        <div class="links__item">
+                            <a href="#">Документы</a>
+                        </div>
+                        <div class="links__item">
+                            <a href="#">Политика конфединциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--logo">
+                    <a href="#">
+                        <svg class="icon footer__logo">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-logo-gray"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

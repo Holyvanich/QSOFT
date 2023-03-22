@@ -1,0 +1,76 @@
+.slider-card {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    width: rem(286px);
+    height: rem(150px);
+
+    filter: $box-shadow-standart;
+    border-radius: rem(5px);
+
+    background-color: $white;
+
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: rem(16px);
+        padding-left: rem(16px);
+        padding-right: rem(16px);
+    }
+
+    &__title {
+        font-size: $font-size-text-regular;
+        line-height: $line-height-text-tiny;
+        font-weight: $font-weight-title;
+
+        display: -webkit-box;
+        overflow: hidden;
+
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    &__icon {
+        width: rem(24px);
+        height: rem(24px);
+    }
+
+    &__text {
+        font-size: rem(14px);
+        line-height: rem(17px);
+
+        display: -webkit-box;
+        overflow: hidden;
+
+        margin: 0;
+        padding-top: rem(10px);
+        padding-left: rem(16px);
+        padding-right: rem(16px);
+
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    &__button {
+        font-size: rem(14px);
+        line-height: rem(16.8px);
+    
+        align-self: flex-end;
+
+        margin-top: auto;
+        padding: rem(6px) rem(30px);
+
+        border-radius: rem(5px) 0 rem(5px) 0;
+    }
+
+    &__buttons {
+        display: flex;
+        align-self: flex-end;
+
+        margin-top: auto;
+    }
+}

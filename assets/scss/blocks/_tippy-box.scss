@@ -1,0 +1,13 @@
+.tippy-box {
+    box-shadow: $box-shadow-tooltip;
+
+    &[data-theme~='favorite'] {
+        font-size: $font-size-input;
+        line-height: rem(16px);
+    
+        color: $space;
+        background-color: $white;
+    }
+}
+
+

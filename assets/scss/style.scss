@@ -1,0 +1,92 @@
+/**
+* Vendors
+*/
+// Пример подключения плагинов
+// @import "~plugin-name.scss";
+@import "~normalize.css";
+@import '~swiper/css/swiper.min.css';
+@import '~select2/dist/css/select2.css';
+@import '~tippy.js/dist/tippy.css';
+@import '~tippy.js/themes/light.css';
+@import '~@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+/**
+* Abstracts
+*/
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+
+/**
+* Base
+*/
+@import "base/fonts";
+@import "base/generic";
+
+
+
+/*
+* Components
+*/
+//  Пример подключения стилей блоков
+// @import "components/my-block";
+@import "blocks/_footer.scss";
+@import "blocks/_header.scss";
+@import "blocks/_container.scss";
+@import "blocks/_page.scss";
+@import "blocks/_button.scss";
+@import "blocks/_link.scss";
+@import "blocks/_menu.scss";
+@import "blocks/_input.scss";
+@import "blocks/_checkbox.scss";
+@import "blocks/_radio.scss";
+@import "blocks/_profile.scss";
+@import "blocks/_social.scss";
+@import "blocks/_links.scss";
+@import "blocks/_card.scss";
+@import "blocks/_cards.scss";
+@import "blocks/_stats.scss";
+@import "blocks/_breadcrumbs.scss";
+@import "blocks/_tabs.scss";
+@import "blocks/_slider.scss";
+@import "blocks/_slider-сard.scss";
+@import "blocks/_base.scss";
+@import "blocks/_detail.scss";
+@import "blocks/_textarea.scss";
+@import "blocks/_edit.scss";
+@import "blocks/_rewiew.scss";
+@import "blocks/_select.scss";
+@import "blocks/_spoiler.scss";
+@import "blocks/_faq.scss";
+@import "blocks/_tippy-box.scss";
+@import "blocks/_modal.scss";
+@import "blocks/_show-more.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

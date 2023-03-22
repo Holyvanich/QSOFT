@@ -1,0 +1,56 @@
+.radio {
+    position: absolute;
+    z-index: -1;
+
+    opacity: 0;
+
+    &+&__wrapper {
+        position: relative;
+
+        display: inline-flex;
+
+        align-items: center;
+        user-select: none;
+    }
+
+    &+&__wrapper::before {
+        display: inline-block;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        width: rem(20px);
+        height: rem(20px);
+        margin-right: rem(8px);
+
+        border: rem(1px) solid $select-color;
+        border-radius: 50%;
+
+        content: '';
+    }
+
+    &:disabled+&__wrapper::before {
+        background-color: $athens-gray;
+        border-color: $light-gray-color;
+    }
+
+    &__dot {
+        position: absolute;
+        top: rem(4.6px);
+        left: rem(4.6px);
+
+        width: rem(11px);
+        height: rem(11px);
+
+        opacity: 0;
+        border-radius: rem(26px);
+        background-color: $select-color;
+    }
+
+    &:checked+&__wrapper>&__dot {
+        opacity: 1;
+    }
+
+    &:disabled+&__wrapper>&__dot {
+        background-color: $light-gray-color;
+    }
+}

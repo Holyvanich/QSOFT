@@ -1,0 +1,30 @@
+.edit {
+    &__section {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: rem(50px);
+        gap: rem(21px);
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        gap: rem(30px);
+        margin-top: rem(50px);
+    }
+
+    &__button {
+        font-size: rem(14px);
+    }
+
+    &__title {
+        margin-bottom: rem(11px);
+    }
+
+    &__input {
+        width: rem(335px);
+    }
+}

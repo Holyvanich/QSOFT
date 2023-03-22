@@ -1,0 +1,126 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$outer-space: #202f2f;
+
+$bunker: #121920;
+$white: #ffffff;
+
+$green: #008000;
+$slate-gray: #768298;
+$heather: #bbc4D6;
+$wild-bluey-onder: #6680ae;
+$athens-gray: #ebebf1;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$cerise-red: #dc2c53;
+$carnation: #f95a59;
+$red-orange: #ff3332;
+$white-different: #fafafa;
+$asphalt: #4b4b4b;
+$black-blue: #121920;
+$smoky-white: #f4f3f6;
+$space: #3a3a43;
+$dull-grey: #69676d;
+$abdel: #d9d9d9;
+
+$title-color: $bunker;
+$button-color: $curious-blue;
+$gray-color: $slate-gray;
+$select-color: $curious-blue;
+$number-list-color: $cerise-red;
+$light-gray-color: $heather;
+$warning-color: $red-orange;
+$wrong-color: $carnation;
+
+/**
+* Fonts
+*/
+$font-path: "/public/fonts";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "Roboto";
+
+$font-family: $font-family-custom, $font-family-default;
+$font-size-input: 12px;
+$font-size-base: 16px;
+$font-size-huge: 18px;
+
+$font-weight-title: 500;
+$font-weight-text: 400;
+
+$font-size-title-big: 36px;
+$line-height-title-big: 47px;
+
+$font-size-title-medium: 30px;
+$line-height-title-medium: 38px;
+
+$font-size-title-small: 24px;
+$line-height-title-small: 29px;
+
+$font-size-text-regular: 16px;
+$line-height-text-regular: 26px;
+
+$font-size-text-tiny: 14px;
+$line-height-text-tiny: 24px;
+
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-desktop: '(min-width: 1440px)';
+$screen-tablet: '(min-width: 768px)';
+
+/**
+* Layout
+*/
+$width-container: 1240px;
+$gap-standart: 20px;
+
+
+/**
+* Sizes
+*/
+$icon-size-big: 40px;
+$icon-size-medium: 24px;
+$icon-size-small: 20px;
+$height-header-desktop: 80px;
+$height-header-mobile: 105px;
+$height-footer-tablet: 102px;
+$height-footer-mobile: 260px;
+$height-sidebar-desktop: 300px;
+$width-sidebar-disktop: 286px;
+$width-sidebar-tablet: 375px;
+
+
+/**
+* Transitions and Animations
+*/
+$transition-duration: .3s;
+$transition-function: ease-in-out;
+
+
+/**
+* Radius
+*/
+$border-radius-news: 8px;
+$border-radius-annonsment: 5px;
+
+
+/**
+* Box-shadows
+*/
+$box-shadow-standart: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.03)) drop-shadow(0px 3px 10px rgba(164, 164, 164, 0.03));
+$box-shadow-hover: drop-shadow(-3px 0px 40px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 10px rgba(164, 164, 164, 0.03));
+$box-shadow-header: 0px 3px 10px rgba(0, 0, 0, 0.05);
+$box-shadow-rewiew: 0px 4px 12px rgba(0, 0, 0, 0.1);
+$box-shadow-tooltip: 0px 4px 16px rgba(0, 0, 0, 0.24);
+$box-shadow-modal: 0px 12px 24px rgba(0, 0, 0, 0.16);
+/**
+* Z-indexes
+*/
+$z-index-header: 50;
